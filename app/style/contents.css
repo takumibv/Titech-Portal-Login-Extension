@@ -1,0 +1,23 @@
+
+#option_link {
+	cursor: pointer;
+    width: 368px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    background: #CC66CC;
+    box-shadow: 0 4px 4px #aaa;
+    color: #fff;
+}
+
+#option_link p {
+	margin: 0;
+	text-align: left;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+#option_link .note {
+	text-align: right;
+	text-decoration: none;
+	color: #000;
+}

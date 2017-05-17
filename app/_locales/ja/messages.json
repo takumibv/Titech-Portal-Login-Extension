@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Titech Portal Login",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Titech Portalへ自動ログインする拡張機能です。",
+    "description": "The description of the application"
+  },
+
+  "opt_setting_page_title": 	{"message": "設定" },
+  "opt_setting_msg": 			{"message": "TokyoTechポータルのログインに必要な情報を設定できます。<br>アカウント情報やマトリックスコードはローカルに保存され、公開されることはありませんが、あくまで自己責任でお願いします。" },
+  "opt_validation_check_msg": 	{"message": "自動ログインを有効にする。" },
+  "opt_account_pswd_title": 	{"message": "アカウントとパスワードの設定" },
+  "opt_show_pswd": 				{"message": "パスワードを表示する" },
+  "opt_hide_pswd": 				{"message": "パスワードを隠す" },
+  "opt_clear_account_msg": 		{"message": "ローカルに保存したアカウントとパスワードをクリアします。" },
+  "opt_matrix_code_title": 		{"message": "マトリックスコードの設定" },
+  "opt_clear_matrix_msg": 		{"message": "ローカルに保存したマトリックスコード情報をクリアします。" },
+
+  "opt_account_pswd_save_btn": 	{"message": "保存" },
+  "opt_clear_account_pswd": 	{"message": "アカウント情報をクリア" },
+  "opt_passsave": 				{"message": "保存" },
+  "opt_clear_matrix": 			{"message": "シリアルナンバーをクリア" },
+
+  "opt_save_account_success":	{"message": "アカウントとパスワードを保存しました。" },
+  "opt_save_account_failed":	{"message": "保存できませんでした。必要事項を埋めているかどうか確認してください。" },
+  "opt_confirm_clear_account_pswd": {"message": "本当に削除しますか？" },
+  "opt_clear_account_pswd_success": {"message": "削除しました。" },
+  "opt_save_matrix_success":	{"message": "マトリックスコードを保存しました。" },
+  "opt_save_matrix_failed":		{"message": "保存できませんでした。全て埋めているかどうか確認してください。" },
+  "opt_confirm_clear_matrix":	{"message": "本当に削除しますか？" },
+  "opt_clear_matrix_success": 	{"message": "削除しました。" },
+  "opt_valid_msg":				{"message": "自動ログインを有効にしました。" },
+  "opt_invalid_msg":			{"message": "自動ログインを無効にしました。" },
+
+  "pop_validation_check_msg":	{"message": "自動ログインを有効にする。" },
+  "pop_usage_link":				{"message": "使い方" },
+  "pop_option_page_link":		{"message": "オプションページ" },
+  "pop_usageModalLabel":		{"message": "Titech Portal Loginの使い方" },
+  "pop_usage_msg_1":			{"message": "初期設定は<a class='option_link'>オプション画面</a>で行います。" },
+  "pop_usage_msg_2":			{"message": "自動ログインを有効にしているか確認してください。" },
+  "pop_usage_msg_3":			{"message": "アカウントとパスワードを保存します。" },
+  "pop_usage_msg_4":			{"message": "学生証の裏のマトリックスコードを保存します。" },
+  "pop_usage_msg_5":			{"message": "ポータルのログインページへ行くと自動でログインできます。" },
+
+  "con_setting_account_msg":	{"message": "アカウントとパスワードを設定して自動ログインを有効にする。" },
+  "con_setting_matrix_msg":		{"message": "マトリックスコードを設定して自動ログインを有効にする。" },
+  "con_chrome_extension":		{"message": "Titech Portal Login(Chrome拡張機能)" },
+  "con_invalid_msg":			{"message": "自動ログインは無効です。" },
+  "con_doing_login_msg":		{"message": "自動ログイン中" }
+}

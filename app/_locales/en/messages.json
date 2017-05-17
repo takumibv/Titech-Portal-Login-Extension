@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Titech Portal Login",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Auto Login to Titech Portal",
+    "description": "The description of the application"
+  },
+
+  "opt_setting_page_title": 	{"message": "Settings" },
+  "opt_setting_msg": 			{"message": "Settings infomation to login to TokyoTech Portal.<br>However Account infomation and Matrix Code are stored in Local Storage, Please take responsibility for your actions." },
+  "opt_validation_check_msg": 	{"message": "Enable Auto login" },
+  "opt_account_pswd_title": 	{"message": "Account and Password Settings" },
+  "opt_show_pswd": 				{"message": "Show Password" },
+  "opt_hide_pswd": 				{"message": "Hide Password" },
+  "opt_clear_account_msg": 		{"message": "Clear saved Account and Password" },
+  "opt_matrix_code_title": 		{"message": "Matrix Code Settings" },
+  "opt_clear_matrix_msg": 		{"message": "Clear saved Matrix Code" },
+
+  "opt_account_pswd_save_btn": 	{"message": "Save" },
+  "opt_clear_account_pswd": 	{"message": "Clear Account infomation" },
+  "opt_passsave": 				{"message": "Save" },
+  "opt_clear_matrix": 			{"message": "Clear Matrix Code" },
+
+  "opt_save_account_success":	{"message": "Account and password saved." },
+  "opt_save_account_failed":	{"message": "Saving failed. Please check whether you fill in necessary items." },
+  "opt_confirm_clear_account_pswd": {"message": "Do you really want to delete?" },
+  "opt_clear_account_pswd_success": {"message": "Deleted it." },
+  "opt_save_matrix_success":	{"message": "Matrix Code saved." },
+  "opt_save_matrix_failed":		{"message": "Saving failed. Please check whether you fill in necessary items." },
+  "opt_confirm_clear_matrix":	{"message": "Do you really want to delete?" },
+  "opt_clear_matrix_success": 	{"message": "Deleted it." },
+  "opt_valid_msg":				{"message": "Enabled Auto Login." },
+  "opt_invalid_msg":			{"message": "Disabled Auto Login." },
+
+  "pop_validation_check_msg":	{"message": "Enabled Auto Login." },
+  "pop_usage_link":				{"message": "Usage" },
+  "pop_option_page_link":		{"message": "Option Page" },
+  "pop_usageModalLabel":		{"message": "Usage" },
+  "pop_usage_msg_1":			{"message": "You can initialize in <a class='option_link'>Option Page</a>." },
+  "pop_usage_msg_2":			{"message": "Please make sure that Auto Login is enabled." },
+  "pop_usage_msg_3":			{"message": "Save your account and password." },
+  "pop_usage_msg_4":			{"message": "Save the matrix code behind the student ID card." },
+  "pop_usage_msg_5":			{"message": "Go to the login page of the Portal, and you can login automatically." },
+
+  "con_setting_account_msg":	{"message": "Set account and password to enable Auto Login." },
+  "con_setting_matrix_msg":		{"message": "Set Matrix Code to enable Auto Login." },
+  "con_chrome_extension":		{"message": "Titech Portal Login(Chrome Extension)" },
+  "con_invalid_msg":			{"message": "Disabled Auto Login." },
+  "con_doing_login_msg":		{"message": "Auto Login" }
+}

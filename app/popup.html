@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang ="ja">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/bootstrap.min.css">
+		<link rel="stylesheet" href="style/popup.css">
+		<script src="scripts/jquery-3.2.1.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
+		<script src="scripts/popup.js"></script>
+	</head>
+<body>
+<div class="container">
+	<div id="title" class="content">
+		<img src="images/icon-128.png">
+		<h2>Titech Portal Login</h2>
+	</div>
+	<div id="selectors" class="content">
+		<div class="validation_check">
+			<span id="validation_check_msg">自動ログインを有効にする。</span>
+			<div id="is_valid_checkbox" class="switch">
+			    <input name="is_valid" checked type="checkbox">
+			    <label for="is_valid"></label>
+			</div>
+		</div>
+	</div>
+	<div id="links" class="content">
+		<a id="usage_link" data-toggle="modal" data-target="#usageModal">使い方</a>・
+		<a id="option_page_link" class="option_link">オプションページ</a>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="usageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="usageModalLabel">Portal Auto Loginの使い方</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<ol>
+      		<li id="usage_msg_1">初期設定は<a class="option_link">オプション画面</a>で行います。</li>
+      		<li id="usage_msg_2">自動ログインを有効にしているか確認してください。</li>
+      		<img src="images/usage_img01.png">
+      		<li id="usage_msg_3">アカウントとパスワードを保存します。</li>
+      		<img src="images/usage_img02.png">
+      		<li id="usage_msg_4">学生証の裏のマトリックスコードを保存します。</li>
+      		<img src="images/usage_img03.png">
+      		<li id="usage_msg_5">ポータルのログインページへ行くと自動でログインできます。</li>
+      		<img src="images/usage_img04.png">
+      	</ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang ="ja">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/options.css">
+		<script src="scripts/jquery-3.2.1.min.js"></script>
+		<script src="scripts/options.js"></script>
+	</head>
+<body>
+<div id="main" class="container">
+	<div class="content">
+		<h2 id="setting_page_title">設定</h2>
+		<p id="setting_msg" class="note">TokyoTechポータルのログインに必要な情報を設定できます。<br>アカウント情報やマトリックスコードはローカルに保存され、公開されることはありませんが、あくまで自己責任でお願いします。</p>
+	</div>
+	<div class="content">
+		<div class="validation_check">
+			<span id="validation_check_msg">自動ログインを有効にする。</span>
+			<div id="is_valid_checkbox" class="switch">
+			    <input name="is_valid" checked type="checkbox">
+			    <label for="is_valid"></label>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<h3 id="account_pswd_title">アカウントとパスワードの設定</h3>
+		<form id="account_pswd_form">
+			<p>Account <input class="account_pswd_input" name="account" type="name"></p>
+			<p>Password <input class="account_pswd_input" name="pswd" type="password"><button id="show_pswd" class="btn">パスワードを表示する</button></p>
+			<p><input id="account_pswd_save_btn" class="btn" type="submit" name="save" value="保存"></p>
+		</form>
+		<p>
+			<input class="btn" type="button" id="clear_account_pswd" value="アカウント情報をクリア"><span id="clear_account_msg" class="note">ローカルに保存したアカウントとパスワードをクリアします。</span>
+		</p>
+	</div>
+	<div class="content">
+		<h3 id="matrix_code_title">マトリックスコードの設定</h3>
+		<form id="matrix_code_form">
+			<table class="matrix_code" border="1"></table>
+			<p><input class="btn" type="submit" id="passsave" value="保存"></p>
+		</form>
+		<p>
+			<input type="button" id="clear_matrix" class="btn" value="シリアルナンバーをクリア">
+			<span id="clear_matrix_msg" class="note">ローカルに保存したマトリックスコード情報をクリアします。</span>
+		</p>
+	</div>
+</div>
+</body>
+</html>

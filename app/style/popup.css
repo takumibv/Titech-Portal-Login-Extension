@@ -1,0 +1,109 @@
+body {
+    font-size: 12px;
+}
+h2 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.content {
+    padding: 8px 12px;
+}
+.container {
+    width: 320px;
+    padding: 12px 8px;
+    float: right;
+}
+.validation_check {
+    font-weight: bold;
+}
+#title img {
+    float: left;
+    width: 36px;
+    margin-right: 12px;
+    margin-top: -6px;
+}
+
+#links {
+    /*text-align: right;*/
+}
+
+#usageModal ol {
+    padding-left: 12px;
+}
+
+#usageModal img {
+    display: block;
+    margin: 12px auto;
+    max-width: 100%;
+    max-height: 240px;
+}
+
+#usageModal li {
+    margin-top: 8px;
+}
+
+.modal-dialog {
+    /*min-width: 460px;*/
+}
+
+.modal-title {
+    float: left;
+}
+
+.modal-footer {
+    padding: 8px 12px;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.switch {
+    float: right;
+}
+.switch input {
+    display: none;
+}
+.switch label {
+    padding: 0px;
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.switch label:before {
+    padding: 6px 10px;
+    content: 'ON';
+    border-radius: 6px 0 0 6px;
+    background: linear-gradient(to bottom, #F0F0F0 0%, #DDD 100%);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1) inset;
+    color: #333;
+}
+.switch label:after {
+    padding: 6px 8px;
+    content: 'OFF';
+    border-radius: 0 6px 6px 0;
+    background: #4FACFD;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1) inset;
+    color: #FFF;
+}
+.switch input + label:hover:before {
+    opacity: 0.5;
+}
+.switch input:checked + label:before {
+    background: #4FACFD;
+    color: #FFF;
+    opacity: 1;
+}
+.switch input:checked + label:after {
+    background: linear-gradient(to bottom, #F0F0F0 0%, #DDD 100%);
+    color: #333;
+}
+.switch input:checked + label:hover:after {
+    opacity: 0.5;
+}
