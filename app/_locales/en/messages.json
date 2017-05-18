@@ -9,7 +9,7 @@
   },
 
   "opt_setting_page_title": 	{"message": "Settings" },
-  "opt_setting_msg": 			{"message": "Settings infomation to login to TokyoTech Portal.<br>However Account infomation and Matrix Code are stored in Local Storage, Please take responsibility for your actions." },
+  "opt_setting_msg": 			{"message": "Settings infomation to login to TokyoTech Portal.<br>However Account information and Matrix Code are stored in Local Storage, Please take responsibility for your actions." },
   "opt_validation_check_msg": 	{"message": "Enable Auto login" },
   "opt_account_pswd_title": 	{"message": "Account and Password Settings" },
   "opt_show_pswd": 				{"message": "Show Password" },
@@ -19,7 +19,7 @@
   "opt_clear_matrix_msg": 		{"message": "Clear saved Matrix Code" },
 
   "opt_account_pswd_save_btn": 	{"message": "Save" },
-  "opt_clear_account_pswd": 	{"message": "Clear Account infomation" },
+  "opt_clear_account_pswd": 	{"message": "Clear Account information" },
   "opt_passsave": 				{"message": "Save" },
   "opt_clear_matrix": 			{"message": "Clear Matrix Code" },
 
