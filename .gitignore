@@ -4,9 +4,9 @@ temp
 dist
 .sass-cache
 app/bower_components
+app/scripts
 test/bower_components
 package
-app/scripts
 scripts_back
 app.*
 *.log
