@@ -9,3 +9,6 @@ package
 app/scripts.babel
 app.*
 *.log
+*/*.log
+.DS_Store
+*/.DS_Store
