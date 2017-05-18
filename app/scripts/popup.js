@@ -28,9 +28,9 @@ $(function() {
         }
         assignEventHandlers() {
             $('#usageModal').on('show.bs.modal', function (event) {
-                var button = $(event.relatedTarget); // Button that triggered the modal
-                var recipient = button.data('whatever'); // Extract info from data-* attributes
-                var modal = $(this);
+                var button      = $(event.relatedTarget); // Button that triggered the modal
+                var recipient   = button.data('whatever'); // Extract info from data-* attributes
+                var modal       = $(this);
                 modal.data('bs.modal').handleUpdate();
                 $("body").css({height: "400px", width: "700px"});
             });
@@ -45,8 +45,8 @@ $(function() {
 
             $("#is_valid_checkbox").on("click", function(){
                 chrome.runtime.getBackgroundPage((backgroundPage) => {
-                    let bg = backgroundPage.bg;
-                    var is_valid = !bg.getIsValid();
+                    let bg          = backgroundPage.bg;
+                    var is_valid    = !bg.getIsValid();
                     bg.setIsValid(is_valid);
                     $("#is_valid_checkbox [name='is_valid']").prop("checked", is_valid);
                 });

@@ -16,7 +16,7 @@ $(function() {
             this.assignEventHandlers();
             this.restoreConfigurations();
         }
-        makeTable(){
+        makeTable() {
             var table = $("<tbody>").appendTo($("#matrix_code_form .matrix_code"));
             var row, col;
             for(row = 0; row <= 7; row++){
@@ -42,21 +42,21 @@ $(function() {
         }
         saveUser(callback) {
             chrome.runtime.getBackgroundPage((backgroundPage) => {
-                let bg = backgroundPage.bg;
-                var user = {};
+                let bg       = backgroundPage.bg;
+                var user     = {};
                 user.account = $("#account_pswd_form [name='account']").val();
-                user.pswd = $("#account_pswd_form [name='pswd']").val();
+                user.pswd    = $("#account_pswd_form [name='pswd']").val();
                 var is_valid = (user.account!="" && user.account!="");
 
                 if(is_valid) bg.setUserConfig(user);
                 callback(is_valid);
             });
         }
-        saveMatrix(callback){
+        saveMatrix(callback) {
             chrome.runtime.getBackgroundPage((backgroundPage) => {
-                let bg = backgroundPage.bg;
-                var i,j,k = 0;
-                var pass = [];
+                let bg       = backgroundPage.bg;
+                var i,j,k    = 0;
+                var pass     = [];
                 var is_valid = true;
 
                 for(i=0; i<7; i++){
@@ -104,7 +104,7 @@ $(function() {
             }
         }
         assignEventHandlers() {
-            $("#show_pswd").on("click", function(){
+            $("#show_pswd").on("click", function() {
                 var inp_pswd = $("#account_pswd_form [name='pswd']");
                 if(inp_pswd.attr("type") == "password"){
                     inp_pswd.attr({type: "text"});
@@ -116,8 +116,8 @@ $(function() {
                 return false;
             });
 
-            $("#account_pswd_form").on("submit", function(){
-                option.saveUser(function(res){
+            $("#account_pswd_form").on("submit", function() {
+                option.saveUser(function (res) {
                     if(res){
                         alert(chrome.i18n.getMessage("opt_save_account_success"));
                     }else{
@@ -127,7 +127,7 @@ $(function() {
                 return false;
             });
 
-            $("#clear_account_pswd").on("click", function(){
+            $("#clear_account_pswd").on("click", function() {
                 chrome.runtime.getBackgroundPage((backgroundPage) => {
                     let bg = backgroundPage.bg;
                     if(confirm(chrome.i18n.getMessage("opt_confirm_clear_account_pswd"))){
@@ -139,8 +139,8 @@ $(function() {
                 });
             });
 
-            $("#matrix_code_form").on("submit", function(){
-                option.saveMatrix(function(res){
+            $("#matrix_code_form").on("submit", function() {
+                option.saveMatrix(function (res) {
                     if(res){
                         alert(chrome.i18n.getMessage("opt_save_matrix_success"));
                     }else{
@@ -150,7 +150,7 @@ $(function() {
                 return false;
             });
 
-            $("#clear_matrix").on("click", function(){
+            $("#clear_matrix").on("click", function() {
                 chrome.runtime.getBackgroundPage((backgroundPage) => {
                     let bg = backgroundPage.bg;
                     if(confirm(chrome.i18n.getMessage("opt_confirm_clear_matrix"))) {
@@ -161,21 +161,21 @@ $(function() {
                 });
             });
 
-            $(".serialn").focus(function(){
+            $(".serialn").focus(function() {
                 $(this).select();
             });
 
-            $(".serialn").keyup(function(){
-                var index = $(".serialn").index(this);
-                var next_input = $(".serialn").eq(index+1);
+            $(".serialn").keyup(function() {
+                var index       = $(".serialn").index(this);
+                var next_input  = $(".serialn").eq(index+1);
                 next_input.focus();
             });
 
-            $("#is_valid_checkbox").on("click", function(){
+            $("#is_valid_checkbox").on("click", function() {
                 chrome.runtime.getBackgroundPage((backgroundPage) => {
-                    let bg = backgroundPage.bg;
-                    var is_valid = !bg.getIsValid();
-                    var msg = is_valid ? chrome.i18n.getMessage("opt_valid_msg") : chrome.i18n.getMessage("opt_invalid_msg");
+                    let bg          = backgroundPage.bg;
+                    var is_valid    = !bg.getIsValid();
+                    var msg         = is_valid ? chrome.i18n.getMessage("opt_valid_msg") : chrome.i18n.getMessage("opt_invalid_msg");
                     bg.setIsValid(is_valid);
                     $("#is_valid_checkbox [name='is_valid']").prop("checked", is_valid);
                     alert(msg);

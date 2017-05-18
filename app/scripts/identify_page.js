@@ -4,7 +4,7 @@
 * 3: エラーページ
 * 4: その他,
 ****/
-var page_type = 3;
+var page_type = 4;
 
 var account = $("th:contains('Account')");
 var pass = $("th:contains('Password')");
