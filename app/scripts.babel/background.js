@@ -2,6 +2,22 @@
 
 var ACCESS_URL = 'https://portal.nap.gsic.titech.ac.jp/GetAccess/Login';
 
+chrome.runtime.onInstalled.addListener(function (details) {
+    console.log('previousVersion', details.previousVersion);
+    let old_matrix_str = localStorage['password'];
+    if (old_matrix_str) {
+        var old_matrix = JSON.parse(JSON.parse(old_matrix_str));
+        var val_str = JSON.stringify(JSON.stringify(old_matrix));
+        var val_enc = window.btoa(window.btoa(val_str));
+        localStorage['MatrixCode'] = val_enc;
+        localStorage.removeItem('password');
+    }
+    let pass = localStorage['pass'];
+    if(pass){
+        localStorage.removeItem('pass');
+    }
+});
+
 $(function() {
     class Background {
         constructor() {
@@ -9,10 +25,6 @@ $(function() {
             console.log("Auto Portal Login is running.");
         }
         assignEventHandlers() {
-        	chrome.runtime.onInstalled.addListener(function (details) {
-        		console.log('previousVersion', details.previousVersion);
-                window.bg.migrateNewVersion();
-			});
 			chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 				if(changeInfo.status == "complete" && tab.url.indexOf(ACCESS_URL) != -1){
 					window.bg.identifyPage(tab.url);
